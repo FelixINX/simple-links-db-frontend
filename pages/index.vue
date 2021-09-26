@@ -21,7 +21,8 @@
         <div v-if="links.length === 0" class="bg-gray-300 rounded-md animate-pulse h-11 w-80"></div>
         <div v-for="link in links" :key="link.slug">
           <a
-            :href="`/api/go/${link.slug}`"
+            v-if="link.published"
+            :href="`${workersEndpointGo}/${link.slug}`"
             class="flex items-center justify-between px-4 py-2 text-xl font-medium text-white rounded-md md:inline-flex bg-brand-700 hover:bg-brand-900 focus:bg-brand-900 gap-x-2 focus:ring-4 focus:ring-offset-2 focus:ring-brand-900 focus:ring-offset-brand-50 focus:outline-none"
           >
             <span>{{ link.title }}</span>
@@ -61,6 +62,9 @@ export default {
     },
     unsplashImage() {
       return `url('https://source.unsplash.com/weekly/?${process.env.unsplashSearch}')`
+    },
+    workersEndpointGo() {
+      return `${process.env.workersEndpoint}/go`
     },
   },
 }
