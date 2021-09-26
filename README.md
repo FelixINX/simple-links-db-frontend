@@ -6,7 +6,7 @@ A simple short link manager, with support for views tracking and QR codes. This 
 
 This project is in fact two repositories:
 
-1. Workers backend for the API routes
+1. [Workers backend for the API routes](https://github.com/FelixINX/simple-links-db-backend)
 2. NuxtJS frontend for client list and admin panel (this one)
 
 This projet make extensive use of the Cloudflare platform:
@@ -18,6 +18,6 @@ This projet make extensive use of the Cloudflare platform:
 
 ## Demo
 
-Go to []() and use the `demo` user with the same password to login. Data resetted every day thanks to Workers Cron.
+Go to [simple-links-db-frontend.pages.dev/login](https://simple-links-db-frontend.pages.dev/login) and use the `demo` user and password `workers-kv-pages`. Data resetted every day thanks to Workers Cron.
 
 ## More instructions comming soon
