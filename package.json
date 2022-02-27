@@ -23,7 +23,7 @@
     "nuxt-i18n": "^6.28.1",
     "qrcode.vue": "1.x",
     "ua-parser-js": "^0.7.28",
-    "url-parse": "^1.5.3",
+    "url-parse": "^1.5.8",
     "v-calendar": "^2.3.2",
     "vee-validate": "^3.4.11",
     "vue-chart-3": "^0.5.7"
